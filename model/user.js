@@ -6,10 +6,13 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
+      minlength:6,
+      maxlenght:12,
     },
     password: {
       type: String,
       required: true,
+      minlength:6,
     },
   },
   { collation: "users" }
